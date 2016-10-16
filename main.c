@@ -113,7 +113,7 @@ main(int argc, char **argv)
         return -1;
     }
     
-	Write_File(strcatv2(buf ,6 ,timenow() ,"[Message]istening on (" ,d->description ,")filename (",timestr,")..."),LogFile,0);
+	Write_File(strcatv2(buf ,6 ,timenow() ,"[Message]listening on (" ,d->description ,")filename (",timestr,")..."),LogFile,0);
     //∞∆¿…¶W.pcap 
     pcap_freealldevs(alldevs);
     pcap_loop(adhandle ,0 ,packet_handler ,(unsigned char *)dumpfile);
